@@ -1,0 +1,203 @@
+###############################################
+# C++ / General Build Artifacts
+###############################################
+# Object & compiled source
+*.o
+*.obj
+*.lo
+*.la
+*.al
+*.ii
+*.s
+*.su
+*.pch
+*.gch
+
+# Dependency / intermediate files
+*.d
+*.mod
+*.smod
+*.dwo
+*.pcm
+*.ipdb
+*.iobj
+
+# Static / shared / dynamic libraries
+*.a
+*.lib
+*.la
+*.lo
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables / binaries
+*.exe
+*.out
+*.app
+*.elf
+*.hex
+*.bin
+
+# Archives / packages
+*.tar
+*.tar.*
+*.zip
+*.7z
+*.rar
+
+###############################################
+# Build System Folders
+###############################################
+build/
+build-*/
+bin/
+obj/
+out/
+dist/
+lib/
+generated/
+
+# Common alternative build dir names
+Debug/
+Release/
+RelWithDebInfo/
+MinSizeRel/
+x64/
+x86/
+
+###############################################
+# CMake
+###############################################
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+CTestTestfile.cmake
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
+
+###############################################
+# Make / Ninja / Autotools
+###############################################
+*.make
+*.ninja
+.ninja_deps
+.ninja_log
+config.status
+config.log
+configure
+configure.scan
+autom4te.cache/
+aclocal.m4
+libtool
+
+###############################################
+# Conan / vcpkg / Package Managers
+###############################################
+conanbuildinfo.*
+conaninfo.txt
+conan.lock
+profile
+.conan/
+vcpkg_installed/
+vcpkg-manifest-install.log
+
+###############################################
+# Cache / Logs / Profiling
+###############################################
+*.log
+*.pid
+*.seed
+*.stackdump
+*.gcno
+*.gcda
+*.gcov
+profiler-output*
+cache/
+.cache/
+
+###############################################
+# Sanitizers / Coverage / Tools
+###############################################
+*.asan.*
+*.tsan.*
+*.lsan.*
+*.ubsan.*
+*.profraw
+*.profdata
+
+###############################################
+# Editor / IDE Specific
+###############################################
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# CLion / JetBrains
+.idea/
+cmake-build-*/
+
+# Xcode
+*.xcworkspace/
+*.xcuserstate
+*.xcuserdatad/
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/xcshareddata/**
+
+# Other editors
+*.swp
+*.swo
+*~
+*.orig
+*.rej
+
+###############################################
+# OS / Filesystem Junk
+###############################################
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+Icon?
+.Spotlight-V100
+.Trashes
+*.tmp
+*.temp
+*.bak
+
+###############################################
+# Misc / Project Specific (adjust as needed)
+###############################################
+logs/
+tmp/
+temp/
+scratch/
+playground*/
+experiments*/
+
+# If you create test output directories
+test-output/
+coverage/
+
+# Uncomment if you add a docs build output
+# docs/_build/
+
+###############################################
+# Local environment & secrets (ensure none committed)
+###############################################
+.env
+.env.*
+!.env.example
+
+# End of .gitignore
