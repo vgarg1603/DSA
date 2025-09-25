@@ -43,6 +43,15 @@ void printNto1(int n, int i)
     cout << i << endl;
 }
 
+int sumOfFirstN(int n)
+{
+    if (n == 1)
+    {
+        return 1;
+    }
+    return n + sumOfFirstN(n - 1);
+}
+
 int main()
 {
     ios_base::sync_with_stdio(false);
@@ -51,14 +60,16 @@ int main()
     int n;
     cin >> n;
 
-    string str;
-    cin >> str;
+    // string str;
+    // cin >> str;
     cout << "\n";
     //    printNameNTimes(n, str);
 
     // print1toN(n, n);
 
-    printNto1(n, 1);
+    // printNto1(n, 1);
+
+    cout << sumOfFirstN(n) << "\n";
 
     return 0;
 }
